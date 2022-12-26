@@ -1,0 +1,242 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
+
+/* RESET CSS  */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  background: #F3F5FC;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+#logo {
+  margin: 40px 0 0 40px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textButtonsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#enterText {
+  margin: 0 0 50px 220px;
+  font-size: 1.12rem;
+  padding: 6px;
+  outline: 0;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  text-align: start;
+  text-transform: uppercase;
+  resize: none;
+  max-width: 100%;
+  height: 100%;
+}
+
+#enterText::placeholder {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 150%;
+  color: #0A3871;
+  opacity: 0.6;
+  text-transform: none;
+}
+
+.buttons-content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 240px;
+}
+
+.buttons-text {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.buttons-text span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #495057;
+  opacity: 0.8;
+}
+
+#alert-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.buttons-area {
+  display: flex;
+  gap: 24px;
+}
+
+.criptoButton {
+  border: none;
+  padding: 4px;
+  width: 230px;
+  height: 50px;
+  background: #0A3871;
+  border-radius: 18px;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.criptoButton:hover {
+  background: darkgray;
+  color: #000000;
+  transition: 0.3s;
+}
+
+.descriptoButton {
+  padding: 4px;
+  width: 230px;
+  height: 50px;
+  background: #D8DFE8;
+  border-radius: 18px;
+  cursor: pointer;
+  color: #0A3871;
+  border: 1px solid #0A3871;
+}
+
+.descriptoButton:hover {
+  background: #0A3871;
+  transition: 0.3s;
+  color: #FFFFFF;
+}
+
+/* RESULT */
+
+.outputContainer {
+  position: absolute;
+  right: 10%;
+  top: 3%;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 310px;
+  height: 580px;
+  background: #FFFFFF;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+}
+
+#bannerAside-img {
+  width: 70%;
+  margin: 0 auto 40px;
+}
+
+aside div {
+  text-align: center;
+}
+
+aside p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  color: #343A40;
+  margin-bottom: 16px;
+}
+
+aside span {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #495057;
+}
+
+/* FOOTER  */
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 20px 0;
+}
+
+footer span a {
+  text-decoration: none;
+}
+
+footer span a:hover {
+  text-decoration: underline;
+}
+
+/* RESULT CONTAINER */
+
+#resultTextArea {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  resize: none;
+  padding: 4px;
+  height: 336px;
+  width: 280px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  outline: 0;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+}
+
+#buttonCopy {
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  margin: 0 auto;
+  width: 220px;
+  height: 67px;
+  background: transparent;
+  color: #0A3871;
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+}
